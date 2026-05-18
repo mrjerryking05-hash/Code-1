@@ -1,2 +1,28 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+#include <iostream>
+using namespace std;
+int main(){
+    int a, b, c;
+    cout << "Enter three numbers: ";
+    cin >> a >> b >> c;
+    if (a > b && a > c)
+        cout << "Greatest number = " << a << endl;
+    if (b > a && b > c)
+        cout << "Greatest number = " << b << endl;
+    if (c > a && c > b)
+        cout << "Greatest number = " << c << endl;
+    if (a < b && a < c)
+        cout << "Smallest number = " << a << endl;
+    if (b < a && b < c)
+        cout << "Smallest number = " << b << endl;
+    if (c < a && c < b)
+        cout << "Smallest number = " << c << endl;
+    if ((a > b && a < c) || (a < b && a > c))
+        cout << "Middle number = " << a << endl;
+    if ((b > a && b < c) || (b < a && b > c))
+        cout << "Middle number = " << b << endl;
+    if ((c > a && c < b) || (c < a && c > b))
+        cout << "Middle number = " << c << endl;
+    return 0;
+}
